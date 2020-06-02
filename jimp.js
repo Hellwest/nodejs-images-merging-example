@@ -16,15 +16,9 @@ async function someFunc(someJimps) {
         throw new Exception()
     }
 
-    let widths = []
-    let heights = []
-
     let maxHeight = 0
 
     for (let image of data) {
-        widths.push(image.getWidth())
-        heights.push(image.getHeight())
-
         if (image.getHeight() > maxHeight) {
             maxHeight = image.getHeight()
         }
